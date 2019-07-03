@@ -1,2 +1,12 @@
+$navbar-default-link-color: #6d1e4b;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// NAVBAR
+
+.navbar {
+  .navbar-brand {
+    color: #3f5a2c;
+  }
+}
