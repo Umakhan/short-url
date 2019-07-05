@@ -1,0 +1,10 @@
+%h1.page-header
+  Check response code
+
+.row
+  .col-md-offset-3.col-md-6
+    .input-group
+      = text_field_tag :url, nil, placeholder: 'Enter url', class: 'form-control'
+      %span.input-group-btn
+        = button_tag 'Check', class: 'btn btn-primary check-url'
+    %h5#code
