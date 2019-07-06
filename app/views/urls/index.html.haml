@@ -1,0 +1,14 @@
+%h1.page-header
+  Generate new url
+
+.row
+  .col-md-offset-2.col-md-8
+    = simple_form_for @url do |f|
+      = f.input :original, label: false, placeholder: 'Original url', required: false
+      .input-group.form-group
+        = f.input :short, label: false, placeholder: 'Short url', required: false
+        .input-group-btn
+          = button_tag 'generate', class: 'btn btn-default generate'
+
+      .actions
+        = f.submit 'Create', class: 'btn btn-primary'
