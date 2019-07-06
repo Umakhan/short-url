@@ -43,6 +43,7 @@ gem 'grape'
 gem 'grape-swagger'
 gem 'grape-swagger-rails', git: 'https://github.com/ruby-grape/grape-swagger-rails'
 gem 'rack-cors', require: 'rack/cors'
+gem 'delayed_job_active_record'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
