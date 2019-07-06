@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   get :generate_short_url, to: 'urls#generate_short_url'
   resources :urls, only: :index
 
+  get ':id', to: 'application#redirect_to_original_url'
+
   root 'check#index'
 end

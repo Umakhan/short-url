@@ -33,6 +33,9 @@ class ShortUrl.UrlsIndex
         $('#new_url')[0].reset()
         buttonEnable()
         removeErrorClass()
+        count = $('.total-links').data('total-links') + 1
+        $('.total-links').text('Total short links: ' + count)
+        $('.total-links').data('total-links', count)
       error: (msg) ->
         errorMsg = JSON.parse(msg.responseText)
         buttonEnable()

@@ -11,3 +11,8 @@
       %ul.nav.navbar-nav
         %li
           = link_to 'Generate', urls_path
+      .navbar-right
+        %ul.nav.navbar-nav
+          %li
+            .total-links{ data: { 'total-links': @total_links }}= "Total short links: #{@total_links}"
+
